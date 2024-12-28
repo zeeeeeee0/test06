@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>container</title>
+    <style>
+
+        /* Two-Column Layout */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .columns {
+            display: flex;
+            gap: 20px;
+        }
+
+       .column {
+        background-color: #d7d7d7;
+            flex: 1;
+            padding: 20px;
+        }
+
+    @media (max-width: 600px) {
+         .columns {
+          flex-direction: column;
+      }
+    }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <div class="columns">
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+    </div>
+
+</body>
+</html>
